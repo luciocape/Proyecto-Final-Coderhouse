@@ -1,0 +1,38 @@
+html{
+    font-size: 15px;
+}
+body{
+    margin: 0;
+}
+/*header(sticky)|configuraciones,nav*/
+header{
+    display: flex;
+    background-color: rgba(127, 188, 61,0.6);
+    position: sticky;
+    top: 0px;
+}
+.configuraciones{
+    width: 50%;
+}
+nav{
+    width: 50%;
+    background-color: rgba(96, 152, 36, 0.6);
+    display: flex;
+}
+nav ul{
+    display: flex;
+    margin: auto;
+    margin-top: 0.5em;
+    padding-left: 0;
+    padding-bottom: 0;
+    width: 100%;
+    gap: 15%;
+    list-style: none;
+    
+}
+nav ul li{
+    width: auto;
+    height: 3em;
+    display: grid;
+    align-items: center;
+}
