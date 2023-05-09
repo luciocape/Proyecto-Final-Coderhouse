@@ -1,3 +1,5 @@
+
+
 html{
     font-size: 15px;
 }
@@ -10,6 +12,7 @@ header{
     background-color: rgba(127, 188, 61,0.6);
     position: sticky;
     top: 0px;
+    margin-bottom: 0;
 }
 .configuraciones{
     width: 50%;
@@ -24,10 +27,13 @@ nav{
     width: 50%;
     background-color: rgba(96, 152, 36, 0.6);
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 nav ul{
     display: flex;
     margin: auto;
+    align-items: center;
     margin-top: 0.5em;
     padding-left: 0;
     padding-bottom: 0;
@@ -36,9 +42,29 @@ nav ul{
     list-style: none;
     
 }
+
 nav ul li{
-    width: auto;
-    height: 3em;
-    display: grid;
+    
+}
+.nav-container{
     align-items: center;
+}
+.modo{
+    width: 80px;
+    height: 40px;
+}
+
+/*Hero banner*/
+#hero{
+    margin-top: 0;
+    height: 20rem;
+    width: 100%;
+    text-align: center;
+    background-image: url(../contenido-pagina/banner.png);
+    background-position: center;
+    background-size: contain;
+}
+.buscador{
+    display: flex;
+    justify-content: center;
 }
