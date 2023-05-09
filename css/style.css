@@ -14,6 +14,12 @@ header{
 .configuraciones{
     width: 50%;
 }
+.avatar{
+    width: 2.5rem;
+}
+.mas{
+    width: 1.5rem;
+}
 nav{
     width: 50%;
     background-color: rgba(96, 152, 36, 0.6);
