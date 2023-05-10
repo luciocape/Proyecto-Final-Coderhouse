@@ -1,53 +1,62 @@
 
-
+/*Configuraciones generales*/
 html{
     font-size: 15px;
 }
 body{
     margin: 0;
 }
+h1{
+    font-size: 3rem;
+}
 /*header(sticky)|configuraciones,nav*/
 header{
+    align-items: center;
+    height: 5rem;
     display: flex;
     background-color: rgba(127, 188, 61,0.6);
     position: sticky;
     top: 0px;
     margin-bottom: 0;
 }
-.configuraciones{
+
+/*Nav(flex)|ul*/
+nav{
+
+    /*Color fondo*/
+    background-color: rgba(96, 152, 36, 0.6);
+    /*Tamaño nav*/
     width: 50%;
+    /*Display:flex, flex-wrap:no wrap|para que los elementos del ul esten siempre en fila*/
 }
+/*Ul(flex),*/
+nav ul{
+    align-items: center;
+    justify-content: left;
+        /*Display:flex, flex-wrap:no wrap|para que los elementos del ul esten siempre en fila*/
+    display: flex;
+    flex-wrap: nowrap;
+    /*Margin: auto|para que se centre*/
+    margin: auto;
+    /*Margin-left|para separarlo del borde*/
+    margin-left: 0.7rem;
+    /*align-items: center|para centrarlo*/
+    align-items: center;
+    padding-left: 0;
+    padding-bottom: 0;
+    /*gap|para separar los elementos del nav*/
+    gap: 2.5%;
+    /*list-style: none|si agrego links, sueltos no quiero que tengan subrrayado*/
+    list-style: none;
+}
+/*Tamaños y estilos de los elementos del nav|avatar, modo, rueda y signo de pregunta*/
 .avatar{
-    width: 2.5rem;
+    width: 3rem;
 }
 .mas{
     width: 1.5rem;
-}
-nav{
-    width: 50%;
-    background-color: rgba(96, 152, 36, 0.6);
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
-nav ul{
-    display: flex;
-    margin: auto;
-    align-items: center;
-    margin-top: 0.5em;
-    padding-left: 0;
-    padding-bottom: 0;
-    width: 100%;
-    gap: 15%;
-    list-style: none;
-    
-}
-
-nav ul li{
-    
-}
-.nav-container{
-    align-items: center;
+    /*Filter: grayscale(1)|lo pongo en blanco y negro*/
+    filter: grayscale(1);
 }
 .modo{
     width: 80px;
@@ -56,15 +65,40 @@ nav ul li{
 
 /*Hero banner*/
 #hero{
+    /*Margin: auto| para que quede centrado*/
+    margin: auto;
+    /*Para que este pegado al header*/
     margin-top: 0;
+    /*Tamaño adecuado a la imagen del banner y responsive*/
     height: 20rem;
-    width: 100%;
+    width: 70%;
+    /*Text-align: center|centra el texto dentro del contenedor*/
     text-align: center;
+    /*Defino la imagen de banne*/
     background-image: url(../contenido-pagina/banner.png);
+    /*Background position|la posiciono en el centro*/
     background-position: center;
-    background-size: contain;
+    /*background-size: cover|cubre tamaño del contenedor*/
+    background-size: cover;
+    /*Background-repeat|para que no se repita en ningun caso*/
+    background-repeat: no-repeat;
+
+    display: grid;
+    align-items: center;
+}
+.presentacion{
+    margin: auto;
 }
 .buscador{
     display: flex;
+    /*Justify-content: center|centro la imagen*/
     justify-content: center;
+    /*centro los elementos del buscador*/
+    align-items: center;
 }
+.buscador form{
+    /*Display: flex|activo los poderes de flex-box*/
+    display: flex;
+    align-items: center;
+}
+
