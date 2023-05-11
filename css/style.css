@@ -64,6 +64,29 @@ nav ul{
 }
 
 /*Hero banner*/
+.container-hero{
+    width: 100%;
+    height: 30%;
+    display: grid;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+.background-hero{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 9rem;
+    display: grid;
+    align-items: center;
+    /*Defino la imagen de banne*/
+    background-image: url(../contenido-pagina/banner.png);
+    /*Background position|la posiciono en el centro*/
+    background-position: center;
+    /*background-size: cover|cubre tamaño del contenedor*/
+    background-size: cover;
+    /*Background-repeat|para que no se repita en ningun caso*/
+    background-repeat: no-repeat;
+}
 #hero{
     /*Margin: auto| para que quede centrado*/
     margin: auto;
@@ -74,19 +97,12 @@ nav ul{
     width: 70%;
     /*Text-align: center|centra el texto dentro del contenedor*/
     text-align: center;
-    /*Defino la imagen de banne*/
-    background-image: url(../contenido-pagina/banner.png);
-    /*Background position|la posiciono en el centro*/
-    background-position: center;
-    /*background-size: cover|cubre tamaño del contenedor*/
-    background-size: cover;
-    /*Background-repeat|para que no se repita en ningun caso*/
-    background-repeat: no-repeat;
-
     display: grid;
     align-items: center;
 }
 .presentacion{
+    position: relative;
+    top: 10%;
     margin: auto;
 }
 .buscador{
@@ -96,9 +112,74 @@ nav ul{
     /*centro los elementos del buscador*/
     align-items: center;
 }
+
 .buscador form{
     /*Display: flex|activo los poderes de flex-box*/
     display: flex;
     align-items: center;
 }
+.texto{
+    width: 12rem;
+}
+.texto:hover{
+    width: 12rem;
+    border: solid 2px #6b63ff;
+}
 
+.lupa{
+    width: 1rem;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.boton:hover{
+    cursor: pointer;
+    border: solid 2px#6b63ff;
+}
+.pin-mapa{
+    width: 1rem;
+    margin-left: 10px;
+}
+.pin-mapa:hover{
+    cursor: pointer;
+}
+main{
+    display: grid;
+    align-items: center;
+}
+#propiedades{
+    margin: auto;
+    width: 90%;
+    height: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.propiedad{
+    width: 30%;
+    min-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9%;
+}
+.propiedad img{
+    width: 100%;
+}
+footer{
+    margin-top: 20px;
+    padding: 1.3em;
+    background-color: blueviolet;
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+.redes{
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    list-style: none;
+}
