@@ -1,4 +1,4 @@
-
+/*Hecho por Lucio Capezzuto*/
 /*Configuraciones generales*/
 html{
     font-size: 15px;
@@ -11,7 +11,7 @@ h1{
 }
 /*header(sticky)|configuraciones,nav*/
 header{
-    background-color: rgba(127, 188, 61,0.6);
+    background-color: rgba(102, 0, 80, 0.9);
     /*display: flex|activo los poderes de */
     display: flex;
     /*Align-items: center|centro el nav*/
@@ -26,11 +26,8 @@ header{
 
 /*Nav(flex)|ul*/
 nav{
-    /*Color fondo*/
-    background-color: rgba(96, 152, 36, 0.6);
     /*Tamaño nav*/
-    width: 50%;
-    /*Display:flex, flex-wrap:no wrap|para que los elementos del ul esten siempre en fila*/
+    width: 90%;
 }
 /*Ul(flex),*/
 nav ul{
@@ -53,15 +50,25 @@ nav ul{
     list-style: none;
 }
 /*Tamaños y estilos de los elementos del nav|avatar, modo, rueda y signo de pregunta*/
-.avatar{
+.logo{
     width: 3rem;
+}
+.avatar{
+    width: 2.5rem;
 }
 .mas{
     width: 1.5rem;
     /*Filter: grayscale(1)|lo pongo en blanco y negro*/
     filter: grayscale(1);
 }
+.modo-container{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .modo{
+    margin: 0;
     width: 55px;
     height: 35px;
 }
@@ -122,6 +129,7 @@ nav ul{
     display: flex;
     align-items: center;
 }
+/*No llegue a comentar todo*/
 .texto{
     width: 12rem;
 }
@@ -186,4 +194,13 @@ footer{
     gap: 10px;
     margin: auto;
     list-style: none;
+}
+.redes img{
+    width: 1.5rem;
+    filter: grayscale(1);
+    transition: 0.7s;
+}
+.redes img:hover{
+    width: 1.5rem;
+    filter: none;
 }
