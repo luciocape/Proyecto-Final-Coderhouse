@@ -11,6 +11,7 @@ h1{
 }
 /*header(sticky)|configuraciones,nav*/
 header{
+    z-index: 9999;
     background-color: rgba(102, 0, 80, 0.9);
     /*display: flex|activo los poderes de */
     display: flex;
@@ -170,13 +171,13 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     overflow-y: scroll;
+    column-gap: 0.9%;
 }
 .propiedad{
     width: 30%;
     min-width: 200px;
     display: flex;
     flex-wrap: wrap;
-    gap: 9%;
 }
 .propiedad img{
     width: 100%;
