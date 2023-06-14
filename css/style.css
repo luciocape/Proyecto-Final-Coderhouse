@@ -188,7 +188,6 @@ footer{
     background-color: blueviolet;
     text-align: center;
     display: grid;
-    align-items: center;
 }
 .redes{
     display: flex;
@@ -205,3 +204,17 @@ footer{
     width: 1.5rem;
     filter: none;
 }
+
+/*Propiedad*/
+.galeria{
+    margin: 3%;
+}
+
+
+/*Ayuda*/
+.contenedor{
+    width: 100%;
+    display: grid;
+    align-items: center;
+}
+
