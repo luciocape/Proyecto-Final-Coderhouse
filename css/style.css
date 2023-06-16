@@ -1,24 +1,38 @@
 /*Hecho por Lucio Capezzuto*/
 /*Configuraciones generales*/
-html{
+html, body{
     font-size: 15px;
-}
-body{
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
+    height: 100%;
+}
+.contenedor-todo{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: grid;
 }
 h1{
     font-size: 3rem;
 }
+h3{
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+}
+p{
+    margin: 0;
+}
 /*header(sticky)|configuraciones,nav*/
 header{
     z-index: 9999;
-    background-color: rgba(102, 0, 80, 0.9);
+    background-color: rgba(149, 13, 149, 0.9);
     /*display: flex|activo los poderes de */
     display: flex;
     /*Align-items: center|centro el nav*/
     align-items: center;
     /*altura*/
-    height: 5rem;
+    height: 10%;
     /*Position: stiky, top: 0|para que quede pegado a inicio*/
     position: sticky;
     top: 0px;
@@ -28,7 +42,7 @@ header{
 /*Nav(flex)|ul*/
 nav{
     /*Tamaño nav*/
-    width: 90%;
+    width: 85%;
 }
 /*Ul(flex),*/
 nav ul{
@@ -75,22 +89,15 @@ nav ul{
 }
 
 /*Hero banner*/
-.container-hero{
-    /*Tamaño de la pantalla*/
-    width: 100%;
-    height: 30%;
-    display: grid;
-    align-items: center;
-    margin-bottom: 6rem;
-}
 .background-hero{
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    height: 90%;
     margin: auto;
     margin-bottom: 9rem;
     display: grid;
     align-items: center;
-    /*Defino la imagen de banne*/
+    position: relative;
+    /*Defino la imagen de banner*/
     background-image: url(../contenido-pagina/banner.png);
     /*Background position|la posiciono en el centro*/
     background-position: center;
@@ -105,8 +112,8 @@ nav ul{
     /*Para que este pegado al header*/
     margin-top: 0;
     /*Tamaño adecuado a la imagen del banner y responsive*/
-    height: 20rem;
-    width: 70%;
+    height: 90%;
+    width: 100%;
     /*Text-align: center|centra el texto dentro del contenedor*/
     text-align: center;
     display: grid;
@@ -159,7 +166,7 @@ nav ul{
 .pin-mapa:hover{
     cursor: pointer;
 }
-main{
+#main-home{
     display: grid;
     align-items: center;
 }
@@ -185,6 +192,7 @@ main{
 footer{
     margin-top: 20px;
     padding: 1.3em;
+    align-self: end;
     background-color: blueviolet;
     text-align: center;
     display: grid;
@@ -209,7 +217,14 @@ footer{
 .galeria{
     margin: 3%;
 }
-
+.container-map{
+    width: 80%;
+    display: flex;
+    justify-items: center;
+}
+iframe{
+    width: 50%;
+}
 
 /*Ayuda*/
 .contenedor{
@@ -218,3 +233,84 @@ footer{
     align-items: center;
 }
 
+/*Cuenta*/
+#main-cuenta{
+        height: 80%;
+}
+#config-cuenta{
+    margin: auto;
+    width: 85%;
+    place-self: center;
+    height: 80%;
+}
+#config-cuenta .row h3{
+        padding: 2%;
+        font-size: 2rem;
+}
+#config-cuenta .row{
+    background-color: cadetblue;
+    align-items: center;
+    justify-content: center;
+    border: solid black 2px;
+}
+.foto-usuario{
+    width: 150px;
+}
+.password{
+    align-items: center;
+    justify-content: center;
+}
+.ojo{
+    position: absolute;
+    display: flex;
+    margin-left: 150px;
+    place-items: center;
+    width: 25px;
+}
+.nueva-cuenta{
+    margin-top: 20px;
+}
+.agregar{
+    width: 150px;
+}
+
+/*Configuración*/
+#personalizacion{
+    background-color: beige;
+    height: 500px;
+}
+#seguridad{
+    background-color: sandybrown;
+    height: 500px;
+}
+#transferencias{
+    background-color: goldenrod;
+    height: 500px;
+}
+#premium{
+    background-color: lightcoral;
+    height: 500px;
+}
+@media only screen and (min-height: 900px){
+
+
+    /*Cuenta*/
+    #config-cuenta .row h3{
+        padding: 5%;
+        font-size: 3rem;
+    }
+    #config-cuenta .row input{
+        width: 500px;
+        height: 60px;
+    }
+    .ojo{
+        width: 50px;
+        height: 50px;
+        margin-left: 450px;
+    }
+    .ojo img{
+        width: 90%;
+    }
+
+    
+}
