@@ -21,7 +21,8 @@ h3{
     margin: 0;
 }
 h4{
-    font-size: 3em;
+    font-size: 2em;
+    margin-top: 20px;
 }
 p{
     margin: 0;
@@ -33,7 +34,7 @@ ul{
 header{
     width: 100%;
     z-index: 9999;
-    background-color: rgba(149, 13, 149, 0.9);
+    background-color: rgba(10, 78, 142, 0.9);
     /*display: flex|activo los poderes de */
     display: flex;
     /*Align-items: center|centro el nav*/
@@ -71,17 +72,17 @@ nav ul{
     /*list-style: none|si agrego links, sueltos no quiero que tengan subrrayado*/
     list-style: none;
 }
+nav ul a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 110%;
+}
+nav ul a:hover{
+    color: #0ac1ab;
+}
 /*Tamaños y estilos de los elementos del nav|avatar, modo, rueda y signo de pregunta*/
 .logo{
-    width: 3rem;
-}
-.avatar{
-    width: 2.5rem;
-}
-.mas{
-    width: 1.5rem;
-    /*Filter: grayscale(1)|lo pongo en blanco y negro*/
-    filter: grayscale(1);
+    width: 4rem;
 }
 .modo-container{
     width: 10%;
@@ -207,7 +208,7 @@ footer{
     margin-top: 20px;
     padding: 1.3em;
     align-self: end;
-    background-color: blueviolet;
+    background-color: rgb(7, 73, 99);
     text-align: center;
     display: grid;
 }
@@ -245,6 +246,12 @@ iframe{
     width: 100%;
     display: grid;
     align-items: center;
+}
+.footer-ayuda{
+    margin-top: 500px;
+}
+.acordion-item{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /*Cuenta*/
@@ -290,6 +297,7 @@ iframe{
 
 /*Configuración*/
 #personalizacion{
+    background-color: rgb(16, 111, 114);
     width: 100%;
     height: 500px;
     grid-template-columns: repeat(3,1fr);
@@ -334,7 +342,7 @@ iframe{
     border: 2px solid white;
 }
 #seguridad{
-    background-color: sandybrown;
+    background-color: rgb(62, 101, 120);
     height: 500px;
     justify-content: space-evenly;
 }
@@ -352,13 +360,10 @@ label input{
     max-height: 350px;
     overflow-y: scroll;
 }
-#transferencias{
-    background-color: goldenrod;
-    height: 500px;
-}
 #premium{
-    background-color: lightcoral;
+    background-color: rgba(55, 61, 115, 0.859);
     height: 500px;
+    justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -373,7 +378,11 @@ label input{
     }
 }
 
-
+@media only screen and (max-width: 400px){
+    nav ul a{
+        font-size: 85%;
+    }
+}
 
 @media only screen and (min-height: 900px){
 

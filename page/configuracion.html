@@ -25,14 +25,11 @@
         <!--Logo-->
         <li><a href="../index.html"><img class="logo" src="../contenido-pagina/logo.png" alt="Casa"></a></li>
         <!--Avatar-->
-        <li><a href="cuenta.html"><img class="avatar" src="../contenido-pagina/avatar.jpg" alt="Avatar"></a></li>
+        <li><a href="cuenta.html">Cuenta</a></li>
         <!--Configuración-->
-        <li><a href="configuracion.html"><img class="mas" src="../contenido-pagina/engranaje.jpg" alt="Engranaje"></a>
-        </li>
+        <li><a href="configuracion.html">Configuración</a></li>
         <!--Ayuda-->
-        <li><a href="ayuda.html"><img class="mas" src="../contenido-pagina/pregunta.png" alt="Signo de pregunta"></a>
-        </li>
-
+        <li><a href="ayuda.html">Ayuda</a></li>
       </ul>
 
     </nav>
@@ -47,14 +44,12 @@
             class="btn btn-primary">Personalización</button></a>
         <a href="#seguridad" class="btn btn-primary"><button type="button"
             class="btn btn-primary">Seguridad/Privacidad</button></a>
-        <a href="#transferencias" class="btn btn-primary"><button type="button"
-            class="btn btn-primary">Transferencias</button></a>
         <a href="#premium" class="btn btn-primary"><button type="button" class="btn btn-primary">Premium</button></a>
       </div>
     </Section>
     <!--Personalización-->
-    <section style="margin-top: 40px;" >
-      <div id="personalizacion" class="d-grid justify-content-center align-items-start" style="margin-top: 40px; grid-area: a;">
+    <section>
+      <div id="personalizacion" class="d-grid justify-content-center align-items-start">
         <!--Color picker-->
         <div class="columna c-picker">
           <h4>COLOR WEB</h4>
@@ -152,14 +147,14 @@
           </ul>
         </div>
         <div class="columna p-premium">
-          <h4>TEMAS</h4>
+          <h4>CONFIGURACIÓN PRO</h4>
           <a href="#premium"><button>COMPRAR</button></a>
         </div>
       </div>
     </section>
     <!--Seguridad/Privacidad-->
-    <section >
-      <div id="seguridad" class="d-flex align-items-start" style="margin-top: 40px;">
+    <section>
+      <div id="seguridad" class="d-flex align-items-start">
         <!--Cookies-->
         <div class="columna">
           <h4>COOKIES</h4>
@@ -181,7 +176,8 @@
         <!--Historial-->
         <div class="columna">
           <h4>HISTORIAL</h4>
-          <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-body-tertiary c-historial" style="width: 380px;">
+          <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-body-tertiary c-historial"
+            style="width: 380px;">
             <a href="/"
               class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none border-bottom">
               <svg class="bi pe-none me-2" width="30" height="24">
@@ -279,22 +275,73 @@
           </div>
         </div>
         <!--VPN-->
-        <div class="columna p-premium d-flex flex-column justify-content-start align-items-center" style="height: 100%;">
+        <div class="columna p-premium d-flex flex-column justify-content-start align-items-center"
+          style="height: 100%; width: 200px;">
           <h4>VPN</h4>
-          <a href="#premium"><button>COMPRAR</button></a>
+          <a href="#premium"><button style="width: 100%;">COMPRAR</button></a>
         </div>
       </div>
     </section>
-    
-
-    <section class="d-flex justify-content-center align-items-center" id="transferencias">
+    <!--Premium-->
+    <section class="d-flex align-items-center" id="premium">
       <div class="d-flex justify-content-center align-items-start" style="margin-top: 40px;">
-
-      </div>
-    </section>
-    <section class="d-flex justify-content-center align-items-center" id="premium">
-      <div class="d-flex justify-content-center align-items-start" style="margin-top: 40px;">
-
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Free</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Transferencias</li>
+                  <li>Servicio de ayuda basico</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Pro</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Transferencias</li>
+                  <li>Personalización pro</li>
+                  <li>Descuentos especiales</li>
+                  <li>Servicio de ayuda pro</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Enterprise</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Transferencias</li>
+                  <li>Personalización pro</li>
+                  <li>VPN</li>
+                  <li>Descuentos especiales</li>
+                  <li>Cuenta de priopietario</li>
+                  <li>Sercio de ayuda pro</li>
+                  <li>Estadisticas</li>
+                  <li>Proximos veneficios</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>

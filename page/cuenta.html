@@ -3,7 +3,8 @@
 
 <head>
     <!--Linkeo bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!--UTF-8(unicode)|para que hacepte caracteres especiales-->
     <meta charset="UTF-8">
     <!--Para que sea compatible con todos los navegadores-->
@@ -16,7 +17,7 @@
 </head>
 
 <body>
-    
+
     <!--Header-->
     <header>
         <!--Nav-->
@@ -25,12 +26,11 @@
                 <!--Logo-->
                 <li><a href="../index.html"><img class="logo" src="../contenido-pagina/logo.png" alt="Casa"></a></li>
                 <!--Avatar-->
-                <li><a href="cuenta.html"><img class="avatar" src="../contenido-pagina/avatar.jpg" alt="Avatar"></a></li>
+                <li><a href="cuenta.html">Cuenta</a></li>
                 <!--Configuración-->
-                <li><a href="configuracion.html"><img class="mas" src="../contenido-pagina/engranaje.jpg"alt="Engranaje"></a></li>
+                <li><a href="configuracion.html">Configuración</a></li>
                 <!--Ayuda-->
-                <li><a href="ayuda.html"><img class="mas" src="../contenido-pagina/pregunta.png"alt="Signo de pregunta"></a></li>
-
+                <li><a href="ayuda.html">Ayuda</a></li>
             </ul>
 
         </nav>
@@ -42,59 +42,62 @@
             <section>
                 <h1 class="text-center">Acount settings</h1>
             </section>
-                <section id="config-cuenta">
-                    <div class="cointainer">
-                        <div class="row">
-                            <h3 class="col-md-6">Foto</h3>
-                            <div class="col-md-6 d-flex justify-content-center">
-                                <img class="foto-usuario " src="../contenido-pagina/avatar.jpg" alt="">
-                            </div>
+            <section id="config-cuenta">
+                <div class="cointainer">
+                    <div class="row">
+                        <h3 class="col-md-6">Foto</h3>
+                        <div class="col-md-6 d-flex justify-content-center">
+                            <img class="foto-usuario " src="../contenido-pagina/avatar.jpg" alt="">
                         </div>
-                        <div class="row">
-                            <h3 class="col-md-6">Nombre de usuario</h3>
-                            <form class="col-md-6 d-flex justify-content-center" action="">
-                                <input type="text">
-                            </form>
-                        </div>
-                        <div class="row">
-                            <h3 class="col-md-6">Correo electronico</h3>
-                            <form class="col-md-6 d-flex justify-content-center" action="">
-                                <input type="email">
-                            </form>
-                            
-                        </div>
-                        <div class="align-items-center row">
-                            <h3 class="col-md-6">Contraseña</h3>
-                            <form class="password d-flex col-md-6" action="">
-                                <input type="password">
-                                <button class="ojo"><img  src="../contenido-pagina/ojo-ciego.svg" alt=""></button>
-                            </form>
-                        </div>
-                    </div> 
-                </section>
-            </div>
-            <section>
-                <div class="nueva-cuenta d-grid flex-column justify-content-center">
-                    <a href="" class="d-flex justify-content-center"><img class="agregar"src="../contenido-pagina/mas.svg" alt=""></a>
-                    <h4 class="text-center">Nueva cuenta</h4>
+                    </div>
+                    <div class="row">
+                        <h3 class="col-md-6">Nombre de usuario</h3>
+                        <form class="col-md-6 d-flex justify-content-center" action="">
+                            <input type="text">
+                        </form>
+                    </div>
+                    <div class="row">
+                        <h3 class="col-md-6">Correo electronico</h3>
+                        <form class="col-md-6 d-flex justify-content-center" action="">
+                            <input type="email">
+                        </form>
+
+                    </div>
+                    <div class="align-items-center row">
+                        <h3 class="col-md-6">Contraseña</h3>
+                        <form class="password d-flex col-md-6" action="">
+                            <input type="password">
+                            <button class="ojo"><img src="../contenido-pagina/ojo-ciego.svg" alt=""></button>
+                        </form>
+                    </div>
                 </div>
             </section>
-        </main>
-        <!--Footer-->
-        <footer>
-            <!--Redes-->
-            <ul class="redes">
-                <li><a href=""><img src="../contenido-pagina/instagram.png" alt="Instagram"></a></li>
-                <li><a href=""><img src="../contenido-pagina/twitter.png" alt="Twitter"></a></li>
-                <li><a href=""><img src="../contenido-pagina/facebook.png" alt="Facebook"></a></li>
-                <li><a href=""><img src="../contenido-pagina/linkedin.png" alt="Linkedin"></a></li>
-            </ul>
-            <!--Copyright-->
-            <p>&copy; 2023 Alquileres Marcelo.com</p>
-        </footer>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <section>
+        <div class="nueva-cuenta d-grid flex-column justify-content-center">
+            <a href="" class="d-flex justify-content-center"><img class="agregar" src="../contenido-pagina/mas.svg"
+                    alt=""></a>
+            <h4 class="text-center">Nueva cuenta</h4>
+        </div>
+    </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <!--Redes-->
+        <ul class="redes">
+            <li><a href=""><img src="../contenido-pagina/instagram.png" alt="Instagram"></a></li>
+            <li><a href=""><img src="../contenido-pagina/twitter.png" alt="Twitter"></a></li>
+            <li><a href=""><img src="../contenido-pagina/facebook.png" alt="Facebook"></a></li>
+            <li><a href=""><img src="../contenido-pagina/linkedin.png" alt="Linkedin"></a></li>
+        </ul>
+        <!--Copyright-->
+        <p>&copy; 2023 Alquileres Marcelo.com</p>
+    </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
