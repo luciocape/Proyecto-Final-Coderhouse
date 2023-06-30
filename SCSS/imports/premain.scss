@@ -1,9 +1,13 @@
 /*Hecho por Lucio Capezzuto*/
-/*Configuraciones generales*/
+/*Imports*/
+@import "variables.scss";
+@import "mixins.scss";
+@import "querys.scss";
 html, body{
     font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
+    max-width: 100%;
     height: 100%;
 }
 .contenedor-todo{
@@ -13,16 +17,24 @@ html, body{
     display: grid;
 }
 h1{
-    font-size: 3rem;
+    @include fuente($font-h1, center);
+}
+h2{
+    @include fuente($font-h2, center)
 }
 h3{
-    font-size: 1rem;
-    text-align: center;
+    @include fuente($font-h3, center);
     margin: 0;
 }
 h4{
-    font-size: 2em;
+    @include fuente($font-h4, center);
     margin-top: 20px;
+}
+h5{
+    @include fuente($font-h5, center);
+}
+h6{
+    @include fuente($font-h6, center);
 }
 p{
     margin: 0;
@@ -30,57 +42,43 @@ p{
 ul{
     list-style: none;
 }
-/*header(sticky)|configuraciones,nav*/
+/*header|configuraciones,nav*/
 header{
     width: 100%;
     z-index: 9999;
     background-color: rgba(10, 78, 142, 0.9);
-    /*display: flex|activo los poderes de */
     display: flex;
-    /*Align-items: center|centro el nav*/
     align-items: center;
-    /*altura*/
     height: 10%;
-    /*Position: stiky, top: 0|para que quede pegado a inicio*/
     position: sticky;
     top: 0px;
     margin-bottom: 0;
 }
 
-/*Nav(flex)|ul*/
+/*Nav|ul*/
 nav{
-    /*Tamaño nav*/
     width: 85%;
+    ul{
+        justify-content: left;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: auto;
+        margin-left: 0.7rem;
+        align-items: center;
+        padding-left: 0;
+        padding-bottom: 0;
+        gap: 2.5%;
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: wheat;
+            font-size: 110%;
+        }
+        a:hover{
+            color: #0ac1ab;
+        }
+    }
 }
-/*Ul(flex),*/
-nav ul{
-    /*Justify-content: left|para que se mueva a la izquierda*/
-    justify-content: left;
-        /*Display:flex, flex-wrap:no wrap|para que los elementos del ul esten siempre en fila*/
-    display: flex;
-    flex-wrap: nowrap;
-    /*Margin: auto|para que se centre*/
-    margin: auto;
-    /*Margin-left|para separarlo del borde*/
-    margin-left: 0.7rem;
-    /*align-items: center|para centrarlo*/
-    align-items: center;
-    padding-left: 0;
-    padding-bottom: 0;
-    /*gap|para separar los elementos del nav*/
-    gap: 2.5%;
-    /*list-style: none|si agrego links, sueltos no quiero que tengan subrrayado*/
-    list-style: none;
-}
-nav ul a{
-    text-decoration: none;
-    color: wheat;
-    font-size: 110%;
-}
-nav ul a:hover{
-    color: #0ac1ab;
-}
-/*Tamaños y estilos de los elementos del nav|avatar, modo, rueda y signo de pregunta*/
 .logo{
     width: 4rem;
 }
@@ -105,24 +103,16 @@ nav ul a:hover{
     display: grid;
     align-items: center;
     position: relative;
-    /*Defino la imagen de banner*/
     background-image: url(../contenido-pagina/banner.png);
-    /*Background position|la posiciono en el centro*/
     background-position: center;
-    /*background-size: cover|cubre tamaño del contenedor*/
     background-size: cover;
-    /*Background-repeat|para que no se repita en ningun caso*/
     background-repeat: no-repeat;
 }
 #hero{
-    /*Margin: auto| para que quede centrado*/
     margin: auto;
-    /*Para que este pegado al header*/
     margin-top: 0;
-    /*Tamaño adecuado a la imagen del banner y responsive*/
     height: 90%;
     width: 100%;
-    /*Text-align: center|centra el texto dentro del contenedor*/
     text-align: center;
     display: grid;
     align-items: center;
@@ -138,18 +128,13 @@ nav ul a:hover{
 }
 .buscador{
     display: flex;
-    /*Justify-content: center|centro la imagen*/
     justify-content: center;
-    /*centro los elementos del buscador*/
     align-items: center;
+    form{
+        display: flex;
+        align-items: center;
+    }
 }
-
-.buscador form{
-    /*Display: flex|activo los poderes de flex-box*/
-    display: flex;
-    align-items: center;
-}
-/*No llegue a comentar todo*/
 .texto{
     width: 12rem;
 }
@@ -157,7 +142,6 @@ nav ul a:hover{
     width: 12rem;
     border: solid 2px #6b63ff;
 }
-
 .lupa{
     width: 1rem;
 }
@@ -197,9 +181,9 @@ nav ul a:hover{
     width: 30%;
     display: flex;
     flex-direction: column;
-}
-.propiedad a img{
-    width: 100%;
+    img{
+        width: 100%;
+    }
 }
 .estrellas{
     width: 20%;
@@ -217,17 +201,16 @@ footer{
     gap: 10px;
     margin: auto;
     list-style: none;
+    img{
+        width: 1.5rem;
+        filter: grayscale(1);
+        transition: 0.7s;
+    }
+    img:hover{
+        width: 1.5rem;
+        filter: none;
+    }
 }
-.redes img{
-    width: 1.5rem;
-    filter: grayscale(1);
-    transition: 0.7s;
-}
-.redes img:hover{
-    width: 1.5rem;
-    filter: none;
-}
-
 /*Propiedad*/
 .galeria{
     margin: 3%;
@@ -240,7 +223,6 @@ footer{
 iframe{
     width: 50%;
 }
-
 /*Ayuda*/
 .contenedor{
     width: 100%;
@@ -253,7 +235,6 @@ iframe{
 .acordion-item{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 /*Cuenta*/
 #main-cuenta{
         height: 80%;
@@ -263,16 +244,17 @@ iframe{
     width: 85%;
     place-self: center;
     height: 80%;
-}
-#config-cuenta .row h3{
-        padding: 2%;
-        font-size: 2rem;
-}
-#config-cuenta .row{
-    background-color: cadetblue;
-    align-items: center;
-    justify-content: center;
-    border: solid black 2px;
+    .row{
+        background-color: cadetblue;
+        align-items: center;
+        justify-content: center;
+        border: solid black 2px;
+        h3{
+            padding: 2%;
+            font-size: 2rem;
+        } 
+    }
+
 }
 .foto-usuario{
     width: 150px;
@@ -294,7 +276,6 @@ iframe{
 .agregar{
     width: 150px;
 }
-
 /*Configuración*/
 #personalizacion{
     background-color: rgb(16, 111, 114);
@@ -313,9 +294,9 @@ iframe{
     gap: 10px;
     justify-content: start;
     align-items: center;
-}
-.columna ul{
-    flex-wrap: wrap;
+    ul{
+        flex-wrap: wrap;
+    }
 }
 .c-picker{
     grid-area: a;
@@ -341,10 +322,12 @@ iframe{
     color: white;
     border: 2px solid white;
 }
+/*seguridad*/
 #seguridad{
     background-color: rgb(62, 101, 120);
-    height: 500px;
+    height: 100%;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .cookies{
     font-size: 2em;    
@@ -360,50 +343,9 @@ label input{
     max-height: 350px;
     overflow-y: scroll;
 }
+/*Premium*/
 #premium{
     background-color: rgba(55, 61, 115, 0.859);
-    height: 500px;
+    height: 100%;
     justify-content: space-evenly;
-}
-
-@media only screen and (max-width: 1000px) {
-    .propiedad{
-        width: 45%;
-    }
-}
-
-@media only screen and (max-width: 800px){
-    .propiedad{
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 400px){
-    nav ul a{
-        font-size: 85%;
-    }
-}
-
-@media only screen and (min-height: 900px){
-
-
-    /*Cuenta*/
-    #config-cuenta .row h3{
-        padding: 5%;
-        font-size: 3rem;
-    }
-    #config-cuenta .row input{
-        width: 500px;
-        height: 60px;
-    }
-    .ojo{
-        width: 50px;
-        height: 50px;
-        margin-left: 450px;
-    }
-    .ojo img{
-        width: 90%;
-    }
-
-    
 }
