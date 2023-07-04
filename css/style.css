@@ -2,40 +2,6 @@
 /*Hecho por Lucio Capezzuto*/
 /*Imports*/
 /*Fuentes*/
-@media only screen and (max-width: 1000px) {
-  .propiedad {
-    width: 45%;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .propiedad {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 400px) {
-  nav ul a {
-    font-size: 85%;
-  }
-}
-@media only screen and (min-height: 900px) {
-  /*Cuenta*/
-  #config-cuenta .row h3 {
-    padding: 5%;
-    font-size: 3rem;
-  }
-  #config-cuenta .row input {
-    width: 500px;
-    height: 60px;
-  }
-  .ojo {
-    width: 50px;
-    height: 50px;
-    margin-left: 450px;
-  }
-  .ojo img {
-    width: 90%;
-  }
-}
 html, body {
   font-size: 15px;
   font-family: "Courier New", Courier, monospace;
@@ -149,16 +115,14 @@ nav ul a:hover {
 /*Hero banner*/
 .background-hero {
   width: 100%;
-  height: 90%;
+  min-height: 90%;
   margin: auto;
   margin-bottom: 9rem;
   display: grid;
   align-items: center;
   position: relative;
-  background-image: url(../contenido-pagina/banner.png);
-  background-position: center;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../contenido-pagina/banner.jpg) no-repeat center center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #hero {
@@ -439,6 +403,41 @@ label input {
   background-color: rgba(55, 61, 115, 0.859);
   height: 100%;
   justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1000px) {
+  .propiedad {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .propiedad {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  nav ul a {
+    font-size: 85%;
+  }
+}
+@media only screen and (min-height: 900px) {
+  /*Cuenta*/
+  #config-cuenta .row h3 {
+    padding: 5%;
+    font-size: 3rem;
+  }
+  #config-cuenta .row input {
+    width: 500px;
+    height: 60px;
+  }
+  .ojo {
+    width: 50px;
+    height: 50px;
+    margin-left: 450px;
+  }
+  .ojo img {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
