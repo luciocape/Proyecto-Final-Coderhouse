@@ -1,0 +1,14 @@
+@import "variables.scss";
+@import "mixins.scss";
+/*Propiedad*/
+.galeria{
+    margin: 3%;
+}
+.container-map{
+    width: 80%;
+    display: flex;
+    justify-items: center;
+}
+iframe{
+    width: 50%;
+}

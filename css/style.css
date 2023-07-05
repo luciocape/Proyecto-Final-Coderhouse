@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/*Hecho por Lucio Capezzuto*/
-/*Imports*/
 /*Fuentes*/
 html, body {
   font-size: 15px;
@@ -57,7 +55,8 @@ ul {
   list-style: none;
 }
 
-/*header|configuraciones,nav*/
+/*Fuentes*/
+/*header*/
 header {
   width: 100%;
   z-index: 9999;
@@ -70,7 +69,7 @@ header {
   margin-bottom: 0;
 }
 
-/*Nav|ul*/
+/*Nav*/
 nav {
   width: 85%;
 }
@@ -112,6 +111,33 @@ nav ul a:hover {
   height: 35px;
 }
 
+/*Footer*/
+footer {
+  margin-top: 20px;
+  padding: 1.3em;
+  align-self: end;
+  background-color: rgb(7, 73, 99);
+  text-align: center;
+  display: grid;
+}
+
+.redes {
+  display: flex;
+  gap: 10px;
+  margin: auto;
+  list-style: none;
+}
+.redes img {
+  width: 1.5rem;
+  filter: grayscale(1);
+  transition: 0.7s;
+}
+.redes img:hover {
+  width: 1.5rem;
+  filter: none;
+}
+
+/*Fuentes*/
 /*Hero banner*/
 .background-hero {
   width: 100%;
@@ -219,31 +245,7 @@ nav ul a:hover {
   width: 20%;
 }
 
-footer {
-  margin-top: 20px;
-  padding: 1.3em;
-  align-self: end;
-  background-color: rgb(7, 73, 99);
-  text-align: center;
-  display: grid;
-}
-
-.redes {
-  display: flex;
-  gap: 10px;
-  margin: auto;
-  list-style: none;
-}
-.redes img {
-  width: 1.5rem;
-  filter: grayscale(1);
-  transition: 0.7s;
-}
-.redes img:hover {
-  width: 1.5rem;
-  filter: none;
-}
-
+/*Fuentes*/
 /*Propiedad*/
 .galeria {
   margin: 3%;
@@ -259,21 +261,7 @@ iframe {
   width: 50%;
 }
 
-/*Ayuda*/
-.contenedor {
-  width: 100%;
-  display: grid;
-  align-items: center;
-}
-
-.footer-ayuda {
-  margin-top: 500px;
-}
-
-.acordion-item {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
+/*Fuentes*/
 /*Cuenta*/
 #main-cuenta {
   height: 80%;
@@ -321,6 +309,22 @@ iframe {
   width: 150px;
 }
 
+/*Ayuda*/
+.contenedor {
+  width: 100%;
+  display: grid;
+  align-items: center;
+}
+
+.footer-ayuda {
+  margin-top: 500px;
+}
+
+.acordion-item {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/*Fuentes*/
 /*Configuración*/
 #personalizacion {
   background-color: rgb(16, 111, 114);

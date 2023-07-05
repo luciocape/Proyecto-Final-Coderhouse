@@ -1,0 +1,43 @@
+@import "variables.scss";
+@import "mixins.scss";
+/*Cuenta*/
+#main-cuenta{
+    height: 80%;
+}
+#config-cuenta{
+margin: auto;
+width: 85%;
+place-self: center;
+height: 80%;
+.row{
+    background-color: cadetblue;
+    align-items: center;
+    justify-content: center;
+    border: solid black 2px;
+    h3{
+        padding: 2%;
+        font-size: 2rem;
+    } 
+}
+
+}
+.foto-usuario{
+width: 150px;
+}
+.password{
+align-items: center;
+justify-content: center;
+}
+.ojo{
+position: absolute;
+display: flex;
+margin-left: 150px;
+place-items: center;
+width: 25px;
+}
+.nueva-cuenta{
+margin-top: 20px;
+}
+.agregar{
+width: 150px;
+}
