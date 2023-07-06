@@ -1,5 +1,4 @@
-@import "variables.scss";
-@import "mixins.scss";
+
 /*Hero banner*/
 .background-hero{
     width: 100%;
@@ -83,13 +82,18 @@
     column-gap: 10px;
 }
 .propiedad{
-    width: 30%;
+    width: 30%; 
     display: flex;
     flex-direction: column;
-    img{
+    justify-content: center;
+    align-items: center;
+    a img{
         width: 100%;
     }
-}
-.estrellas{
-    width: 20%;
+    .estrellas{
+        display: fle;
+        width: 30%;
+        align-self: start;
+        justify-self: end;
+    }
 }
