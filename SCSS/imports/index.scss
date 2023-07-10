@@ -80,20 +80,29 @@
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 10px;
-}
-.propiedad{
-    width: 30%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    a img{
-        width: 100%;
-    }
-    .estrellas{
-        display: fle;
+    .propiedad{
         width: 30%;
-        align-self: start;
-        justify-self: end;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 350px;
+        a{
+            width: 100%;
+        }
+        a img{
+        
+            width: 95%;
+            transition: 0.3s;
+        }
+        a img:hover{
+            width: 100%;
+            transition: 0.1s;
+        }
+        .estrellas{
+            width: 30%;
+            align-self: start;
+            justify-self: end;
+        }
     }
 }
