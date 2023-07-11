@@ -36,12 +36,12 @@
         <img class="modo" src="../contenido-pagina/modo-dia.png" alt="Modo">
     </header>
     <!--Main-->
-    <main>
+    <main width="100%">
         <h1>Micro Centro Excepcional Ubicación. cochera.</h1>
-        <section class="cointainer-fluid">
-            <div class="row">
-                <div class="col-5" style="margin: 20px;">
-                    <div style="width: 90%;">
+        <section class="cointainer-fluid" height="1000vh" width="90%">
+            <div class="row" width="90%">
+                <div class="col-6">
+                    <div style="width: 85%;" style="margin: 20px;">
                         <h2>Acerca del alojamiento</h2>
                         <p>¡Excelente ubicación en Buenos Aires! A solo 4 cuadras del Obelisco y a 5 de Puerto Madero,
                             dos de los lugares más emblemáticos de la ciudad. Ofrecemos seguridad las 24 horas,
@@ -53,69 +53,68 @@
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ver-mas">
                             Ver más...
                         </button>
-                        <div id="ver-mas" class="modal" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <h3>El alojamiento</h3>
-                                        <p>
-                                            📍Un lugar cerca de todo lo que necesitas: Puntos de interés, Transporte,
-                                            Espacios verdes,
-                                            Plazas, Reserva ecologica,Bares, Restaurantes, Teatros.
-                                            Lo mejor de Buenos Aires, está acá.
-                                            Es un monoambiente totalmente equipadio para cuatro personas, cama
-                                            matrimonial un divan cama
-                                            con un carro cama debajo, lo que brinda dos camas de una plaza. Sábanas y
-                                            frazadas
-                                            disponibles.
-                                            tiene todos los elementos de cocina, horno eléctrico, anafes , horno
-                                            microondas, utensilios,
-                                            platos, vasos etc. etc.
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                            Close
-                                        </button>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+                <div id="ver-mas" class="modal" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <h3>El alojamiento</h3>
+                                <p>
+                                    📍Un lugar cerca de todo lo que necesitas: Puntos de interés, Transporte,
+                                    Espacios verdes,
+                                    Plazas, Reserva ecologica,Bares, Restaurantes, Teatros.
+                                    Lo mejor de Buenos Aires, está acá.
+                                    Es un monoambiente totalmente equipadio para cuatro personas, cama
+                                    matrimonial un divan cama
+                                    con un carro cama debajo, lo que brinda dos camas de una plaza. Sábanas y
+                                    frazadas
+                                    disponibles.
+                                    tiene todos los elementos de cocina, horno eléctrico, anafes , horno
+                                    microondas, utensilios,
+                                    platos, vasos etc. etc.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Close
+                                </button>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-            </div>
-            <div id="myCarousel" class="carousel slide mb-6 col-6" data-bs-ride="carousel" data-bs-theme="light">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex justify-content-center">
-                            <img src="../contenido-pagina/departamento/interior.jpg" height="500vh" alt="">
+                <div id="myCarousel" class="carousel slide mb-6 col-6" data-bs-ride="carousel" data-bs-theme="light"
+                    width="100%" margin="0">
+                    <div class="carousel-inner" margin="0">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                                <img src="../contenido-pagina/departamento/interior.jpg" height="350vh" alt="">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="../contenido-pagina/departamento/interior-p.jpg" height="350vh" alt="">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center" style="align-items: center;">
+                                <img src="../contenido-pagina/departamento/comedor.jpg" height="350vh" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="d-flex justify-content-center">
-                            <img src="../contenido-pagina/departamento/interior-p.jpg" height="500vh" alt="">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex justify-content-center" style="align-items: center;">
-                            <img src="../contenido-pagina/departamento/comedor.jpg" height="500vh" alt="">
-                        </div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="prev" style="padding: 0; margin: 0;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="next" style="padding: 0; margin: 0;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
             </div>
         </section>
-        <br>
         <section>
             <div class="d-flex justify-content-center">
                 <iframe
