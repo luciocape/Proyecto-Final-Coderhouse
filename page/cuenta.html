@@ -35,19 +35,20 @@
 
         </nav>
         <!--Modo-->
-        <img class="modo" src="../contenido-pagina/modo-dia.png" alt="Modo">
+        <div class="modo-container">
+            <img class="modo" src="../contenido-pagina/modo-dia.png" alt="Modo">
+        </div>
     </header>
     <div class="contenedor-todo">
         <main id="main-cuenta">
-            <section>
-                <h1 class="text-center">Acount settings</h1>
-            </section>
+            <h1 class="text-center">Acount settings</h1>
             <section id="config-cuenta">
                 <div class="cointainer">
                     <div class="row">
                         <h3 class="col-md-6">Foto</h3>
                         <div class="col-md-6 d-flex justify-content-center">
-                            <img class="foto-usuario " src="../contenido-pagina/avatar.jpg" alt="">
+                            <img class="foto-usuario " src="../contenido-pagina/avatar.jpg"
+                                alt="Foto de perfil del usuario">
                         </div>
                     </div>
                     <div class="row">
@@ -67,29 +68,36 @@
                         <h3 class="col-md-6">Contraseña</h3>
                         <form class="password d-flex col-md-6" action="">
                             <input type="password">
-                            <button class="ojo"><img src="../contenido-pagina/ojo-ciego.svg" alt=""></button>
+                            <button class="ojo"><img src="../contenido-pagina/ojo-ciego.svg"
+                                    alt="ojo tachado con linea diagonal - contraseña no visble"></button>
                         </form>
                     </div>
                 </div>
             </section>
+            <section>
+                <div class="nueva-cuenta d-grid flex-column justify-content-center">
+                    <a href="" class="d-flex justify-content-center"><img class="agregar"
+                            src="../contenido-pagina/mas.svg"
+                            alt="circulo vacio con un signo de suma en su interior"></a>
+                    <h4 class="text-center">Nueva cuenta</h4>
+                </div>
+            </section>
+        </main>
     </div>
-    <section>
-        <div class="nueva-cuenta d-grid flex-column justify-content-center">
-            <a href="" class="d-flex justify-content-center"><img class="agregar" src="../contenido-pagina/mas.svg"
-                    alt=""></a>
-            <h4 class="text-center">Nueva cuenta</h4>
-        </div>
-    </section>
-    </main>
+
     <!--Footer-->
     <footer>
         <!--Redes-->
         <ul class="redes">
-            <li><a href=""><img src="../contenido-pagina/instagram.png" alt="Instagram"></a></li>
-            <li><a href=""><img src="../contenido-pagina/twitter.png" alt="Twitter"></a></li>
-            <li><a href=""><img src="../contenido-pagina/facebook.png" alt="Facebook"></a></li>
-            <li><a href=""><img src="../contenido-pagina/linkedin.png" alt="Linkedin"></a></li>
-        </ul>
+            <li><a href="https://www.instagram.com/"><img src="../contenido-pagina/instagram.png"
+                  alt="Logo de Instagram - Enlace al perfil de la empresa"></a></li>
+            <li><a href="https://twitter.com/"><img src="../contenido-pagina/twitter.png"
+                  alt="Logo de Twitter - Enlace al perfil de la empresa"></a></li>
+            <li><a href="https://facebook.com/"><img src="../contenido-pagina/facebook.png"
+                  alt="Logo de Facebook - Enlace al perfil de la empresa"></a></li>
+            <li><a href="https://www.linkedin.com/"><img src="../contenido-pagina/linkedin.png"
+                  alt="Logo de Linkedin - Enlace al perfil de la empresa"></a></li>
+          </ul>
         <!--Copyright-->
         <p>&copy; 2023 Alquileres Marcelo.com</p>
     </footer>

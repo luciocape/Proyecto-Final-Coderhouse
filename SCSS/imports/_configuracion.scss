@@ -1,0 +1,125 @@
+@use "variables";
+@use "mixins";
+
+/*Configuración*/
+#nav-seccion {
+    width: 90%;
+
+    a {
+        width: 1fr;
+        padding: 10px 0 10px 0;
+
+        .btn {
+            width: 1fr;
+            padding: 0;
+        }
+
+    }
+}
+//personalización
+#personalizacion {
+    width: 100%;
+    height: 500px;
+    border: 10px solid black;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "a y c"
+        "b b b"
+        "b b b";
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+
+    ul {
+        flex-wrap: wrap;
+    }
+}
+
+.c-picker {
+    grid-area: a;
+}
+
+.m-nocturno {
+    grid-area: y;
+}
+
+.t-letra {
+    grid-area: c;
+}
+
+.p-premium {
+    grid-area: b;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            width: 300%;
+            height: 100px;
+            border-radius: 50px;
+            border: 2px solid black;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+        }
+    }
+
+}
+
+
+/*seguridad*/
+#seguridad {
+    border: 10px solid black;
+    height: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cookies {
+    font-size: 2em;
+}
+
+label input {
+    width: 30px;
+    height: 30px;
+}
+
+.c-historial {
+    border-radius: 20px;
+}
+
+.historial {
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+/*Premium*/
+#premium {
+    border: 10px solid black;
+    height: 100%;
+    justify-content: space-evenly;
+
+    .col {
+        width: 33%;
+        .card-body {
+            width: 100%;
+        }
+    }
+
+}

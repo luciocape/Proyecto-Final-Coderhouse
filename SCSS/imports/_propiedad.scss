@@ -1,0 +1,14 @@
+@use "variables";
+@use "mixins";
+/*Propiedad*/
+.galeria{
+    margin: 3%;
+}
+.container-map{
+    width: 80%;
+    display: flex;
+    justify-items: center;
+}
+iframe{
+    width: 75%;
+}

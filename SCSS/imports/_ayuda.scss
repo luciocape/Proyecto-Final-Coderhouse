@@ -1,0 +1,28 @@
+@use "variables";
+@use "mixins";
+/*Ayuda*/
+.contenedor{
+    width: 100%;
+    display: grid;
+    align-items: center;
+}
+.contenedor-preguntas{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    input{
+        font-size: 1.5rem;
+    }
+    .boton-preguntas{
+        font-size: 2rem;
+    }
+}
+.contenedor-h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.accordion-item{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}

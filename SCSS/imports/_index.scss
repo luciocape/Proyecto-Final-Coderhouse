@@ -1,0 +1,133 @@
+@use "variables";
+@use "mixins";
+/*Hero banner*/
+.background-hero{
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    margin-bottom: 6rem;
+    position: relative;
+    background: linear-gradient(rgba(5, 7, 12, 0.75),rgba(5, 7, 12, 0.75)), url(../contenido-pagina/banner.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#hero{
+    margin: 0 auto;
+    margin-top: 0;
+    height: 90%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10%;
+    margin: auto;
+    h1, h2{
+        text-shadow: 6px 1px 0.1em rgb(188, 184, 196), -6px -1px 0.1em rgb(188, 184, 196);
+    }
+}
+
+.buscador{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form{
+        display: flex;
+        align-items: center;
+    }
+}
+.texto{
+    width: 30rem;
+    height: 3rem;
+    border: solid 2px black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.texto:hover{
+    width: 29.2rem;
+    height: 2.8rem;
+    border: solid 2px #6b63ff;
+}
+.lupa{
+    width: 1.7rem;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.8rem;
+    height: 3rem;
+    border: solid 2px black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.boton:hover{
+    cursor: pointer;
+    border: solid 2px#6b63ff;
+}
+.pin-mapa{
+    width: 1.7rem;
+    margin-left: 10px;
+    filter: invert(1);
+}
+.pin-mapa:hover{
+    cursor: pointer;
+    
+}
+#main-home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#propiedades{
+    margin: auto;
+    padding: 10px;
+    width: 98%;
+    height: 100%;
+    border: black 2px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    .propiedad{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a{
+            width: 100%;
+        }
+        a img{
+        
+            width: 95%;
+            transition: 0.3s;
+        }
+        a img:hover{
+            width: 100%;
+            transition: 0.1s;
+        }
+        .estrellas{
+            width: 30%;
+            align-self: start;
+            justify-self: end;
+        }
+    }
+}

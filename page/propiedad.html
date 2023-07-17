@@ -33,13 +33,15 @@
             </ul>
         </nav>
         <!--Modo-->
-        <img class="modo" src="../contenido-pagina/modo-dia.png" alt="Modo">
+        <div class="modo-container">
+            <img class="modo" src="../contenido-pagina/modo-dia.png" alt="Modo">
+        </div>
     </header>
     <!--Main-->
     <main width="100%">
         <h1>Micro Centro Excepcional Ubicación. cochera.</h1>
-        <section class="cointainer-fluid" height="1000vh" width="90%">
-            <div class="row" width="90%">
+        <section class="cointainer-fluid" height="1000vh" width="90%" style="margin-bottom: 30px;">
+            <div class="row" width="90%" style="margin: 0;">
                 <div class="col-6">
                     <div style="width: 85%;" style="margin: 20px;">
                         <h2>Acerca del alojamiento</h2>
@@ -47,32 +49,30 @@
                             dos de los lugares más emblemáticos de la ciudad. Ofrecemos seguridad las 24 horas,
                             cerradura electrónica y acceso autónomo. Departamento super luminoso, cerca de las líneas de
                             subte, así como del Metrobus. En los alrededores, los principales centros turísticos y
-                            puntos de interés, restaurantes y cafés. Cochera por un pago adicional. <br><br>👣Todo se
-                            puede hacer a pie. ¡Una estancia inolvidable te espera.<br><br></p>
+                            puntos de interés, restaurantes y cafés. Cochera por un pago adicional.</p>
                         <!-- Scrollable modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ver-mas">
                             Ver más...
                         </button>
                     </div>
                 </div>
-                <div id="ver-mas" class="modal" aria-hidden="true">
+                <div id="ver-mas" class="modal" aria-hidden="true" style="z-index: 9999;">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                         <div class="modal-content">
                             <div class="modal-body">
                                 <h3>El alojamiento</h3>
                                 <p>
+                                    ¡Excelente ubicación en Buenos Aires! A solo 4 cuadras del Obelisco y a 5 de Puerto
+                                    Madero, dos de los lugares más emblemáticos de la ciudad. Ofrecemos seguridad las 24 horas, cerradura electrónica y acceso autónomo. Departamento super luminoso, cerca de las 
+                                    líneas de subte, así como del Metrobus. En los alrededores, los principales centros turísticos
+                                    y puntos de interés, restaurantes y cafés. Cochera por un pago adicional.
+                                    <br><br>👣Todo se puede hacer a pie. ¡Una estancia inolvidable te espera.<br><br>
                                     📍Un lugar cerca de todo lo que necesitas: Puntos de interés, Transporte,
-                                    Espacios verdes,
-                                    Plazas, Reserva ecologica,Bares, Restaurantes, Teatros.
+                                    Espacios verdes, Plazas, Reserva ecologica,Bares, Restaurantes, Teatros.
                                     Lo mejor de Buenos Aires, está acá.
                                     Es un monoambiente totalmente equipadio para cuatro personas, cama
-                                    matrimonial un divan cama
-                                    con un carro cama debajo, lo que brinda dos camas de una plaza. Sábanas y
-                                    frazadas
-                                    disponibles.
-                                    tiene todos los elementos de cocina, horno eléctrico, anafes , horno
-                                    microondas, utensilios,
-                                    platos, vasos etc. etc.
+                                    matrimonial un divan cama con un carro cama debajo, lo que brinda dos camas de una plaza. Sábanas y frazadas disponibles.
+                                    Tiene todos los elementos de cocina, horno eléctrico, anafes , horno, microondas, utensilios, platos, vasos etc. etc.
                                 </p>
                             </div>
                             <div class="modal-footer">
@@ -84,21 +84,41 @@
                     </div>
                 </div>
                 <div id="myCarousel" class="carousel slide mb-6 col-6" data-bs-ride="carousel" data-bs-theme="light"
-                    width="100%" margin="0">
+                    width="100%" style="margin: 0;" style="margin-right: 0; margin-left: 0;">
                     <div class="carousel-inner" margin="0">
                         <div class="carousel-item active">
                             <div class="d-flex justify-content-center">
-                                <img src="../contenido-pagina/departamento/interior.jpg" height="350vh" alt="">
+                                <img src="../contenido-pagina/departamento/interior.jpg" height="350vh" alt="Vista general del departamento desde la entrada, con una decoración moderna y abundante luz natural">
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="d-flex justify-content-center">
-                                <img src="../contenido-pagina/departamento/interior-p.jpg" height="350vh" alt="">
+                                <img src="../contenido-pagina/departamento/interior-p.jpg" height="350vh" alt="Vista general del departamento desde la ventana, con una decoración moderna y abundante luz natural">
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="d-flex justify-content-center" style="align-items: center;">
-                                <img src="../contenido-pagina/departamento/comedor.jpg" height="350vh" alt="">
+                                <img src="../contenido-pagina/departamento/comedor.jpg" height="350vh" alt=" comedor familiar con televisor frente a la cocina">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center" style="align-items: center;">
+                                <img src="../contenido-pagina/departamento/cocina.jpg" height="350vh" alt="Cocina con electrodomésticos modernos, alacena y lavamanos">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center" style="align-items: center;">
+                                <img src="../contenido-pagina/departamento/cama.jpg" height="350vh" alt="Dormitorio espacioso con cama matrimonial y vista panorámica">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center" style="align-items: center;">
+                                <img src="../contenido-pagina/departamento/baño.jpg" height="350vh" alt="Baño elegante con paredes de mármol blanco, ducha con vidriera de cristal transparente, lavamanos con espejo vertical amplio e iluminación integrada">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center" style="align-items: center;">
+                                <img src="../contenido-pagina/departamento/living.jpg" height="350vh" alt="Sala de estar con amplio sofá azul con cama desplegable, espejo vertical, mesa ratona y cuadro de arte abstracta">
                             </div>
                         </div>
                     </div>
@@ -128,11 +148,15 @@
     <footer>
         <!--Redes-->
         <ul class="redes">
-            <li><a href=""><img src="../contenido-pagina/instagram.png" alt="Instagram"></a></li>
-            <li><a href=""><img src="../contenido-pagina/twitter.png" alt="Twitter"></a></li>
-            <li><a href=""><img src="../contenido-pagina/facebook.png" alt="Facebook"></a></li>
-            <li><a href=""><img src="../contenido-pagina/linkedin.png" alt="Linkedin"></a></li>
-        </ul>
+            <li><a href="https://www.instagram.com/"><img src="../contenido-pagina/instagram.png"
+                  alt="Logo de Instagram - Enlace al perfil de la empresa"></a></li>
+            <li><a href="https://twitter.com/"><img src="../contenido-pagina/twitter.png"
+                  alt="Logo de Twitter - Enlace al perfil de la empresa"></a></li>
+            <li><a href="https://facebook.com/"><img src="../contenido-pagina/facebook.png"
+                  alt="Logo de Facebook - Enlace al perfil de la empresa"></a></li>
+            <li><a href="https://www.linkedin.com/"><img src="../contenido-pagina/linkedin.png"
+                  alt="Logo de Linkedin - Enlace al perfil de la empresa"></a></li>
+          </ul>
         <!--Copyright-->
         <p>&copy; 2023 Alquileres Marcelo.com</p>
     </footer>

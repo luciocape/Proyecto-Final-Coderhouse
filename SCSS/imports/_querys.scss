@@ -1,0 +1,63 @@
+@use "variables";
+@use "mixins";
+
+//Tablet
+@media only screen and (max-width: 768px) {
+    header {
+        nav {
+            ul{
+                gap: 6.3px;   
+            }
+        }
+    }
+
+    html {
+        font-size: 10px;
+    }
+
+    #propiedades {
+        gap: 2px;
+
+        .propiedad {
+            width: 49.5%;
+        }
+    }
+
+}
+
+//Movile
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 7px;
+    }
+
+    #propiedades {
+        .propiedad {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-height: 900px) {
+
+    /*Cuenta*/
+    #config-cuenta .row h3 {
+        padding: 5%;
+        font-size: 3rem;
+    }
+
+    #config-cuenta .row input {
+        width: 500px;
+        height: 60px;
+    }
+
+    .ojo {
+        width: 50px;
+        height: 50px;
+        margin-left: 450px;
+
+        img {
+            width: 90%;
+        }
+    }
+}

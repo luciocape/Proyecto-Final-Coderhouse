@@ -31,74 +31,182 @@
         <!--Ayuda-->
         <li><a href="ayuda.html">Ayuda</a></li>
       </ul>
-
     </nav>
     <!--Modo-->
-    <img class="modo" src="../contenido-pagina/modo-dia.png" alt="Modo">
+    <div class="modo-container">
+      <img class="modo" src="../contenido-pagina/modo-dia.png" alt="Modo">
+    </div>
+
   </header>
   <main>
-    <div class="contenedor">
+    <div class="contenedor-preguntas">
       <section class="Ayuda text-center">
         <h1>Ayuda</h1>
         <h2>Como podemos ayudarte??</h2>
         <form class="row d-grid" role="search">
           <input class="form-control me-2" type="search" placeholder="Cual es tu duda?" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">buscar</button>
+          <button class="btn btn-outline-success boton-preguntas" type="submit">buscar</button>
         </form>
       </section>
     </div>
 
     <section>
-      <h3>Preguntas frecuentes</h3>
-      <div class="accordion" id="accordionExample">
+      <div class="accordion" id="accordionExample"
+        style="margin: 30px; padding: 20px 15px; background-color: rgba(103, 233, 235,0.6); border-radius: 30px;">
+        <div class="contenedor-h3">
+          <h3>Preguntas frecuentes</h3>
+        </div>
+        <!--Item-1-->
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h4 class="accordion-header" style="margin: 0;">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
               aria-expanded="true" aria-controls="collapseOne">
-              Accordion Item #1
+              ¿Cuál es el proceso de reserva de una propiedad?
             </button>
-          </h2>
+          </h4>
           <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
+              <p>
+                Para reservar una propiedad, puedes utilizar nuestro sistema de reserva en línea.
+                Selecciona las fechas deseadas, elige la propiedad que te interese y completa el formulario de reserva.
+                Una vez que hayamos recibido tu solicitud, nos pondremos en contacto contigo para finalizar la reserva y
+                proporcionarte más detalles.
+              </p>
+
             </div>
           </div>
         </div>
+        <!--Item-2-->
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Item #2
+          <h4 class="accordion-header" style="margin: 0;">
+            <button class="accordion-button collapsed" type="button" aria-expanded="false" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              ¿Cómo puedo contactar al propietario de la propiedad para hacer consultas o reservas?
             </button>
-          </h2>
+          </h4>
           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
+              <p>Puedes encontrar la información de contacto del propietario en la página de cada propiedad.
+                Allí encontrarás su número de teléfono y dirección de correo electrónico.
+                No dudes en comunicarte directamente con el propietario para hacer cualquier consulta o solicitar más
+                información sobre la propiedad.
+              </p>
             </div>
           </div>
         </div>
+        <!--Item-3-->
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h4 class="accordion-header" style="margin: 0;">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Item #3
+              ¿Cuál es el proceso de pago y depósito de seguridad para confirmar una reserva?
             </button>
-          </h2>
+          </h4>
           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
+              <p>
+                Una vez que hayas acordado los detalles de la reserva con el propietario, generalmente se requerirá un
+                pago inicial
+                y un depósito de seguridad para confirmar la reserva. El propietario te proporcionará los detalles sobre
+                los métodos
+                de pago aceptados y la cantidad del depósito. Asegúrate de leer y entender los términos y condiciones
+                relacionados con los pagos y depósitos de seguridad.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Item-4-->
+        <div class="accordion-item">
+          <h4 class="accordion-header" style="margin: 0;">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              ¿Qué sucede si tengo algún problema o emergencia durante mi estadía?
+            </button>
+          </h4>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                En caso de cualquier problema o emergencia durante tu estadía, debes comunicarte directamente con el
+                propietario.
+                Ellos estarán disponibles para brindarte asistencia y solucionar cualquier problema que surja.
+                Asegúrate de tener a mano la información de contacto del propietario para poder contactarlos fácilmente
+                en caso de ser necesario.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Item-5-->
+        <div class="accordion-item">
+          <h4 class="accordion-header" style="margin: 0;">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              ¿Cuál es la política de cancelación de reservas y reembolsos?
+            </button>
+          </h4>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                Nuestra política de cancelación puede variar según la propiedad y la temporada.
+                Por lo general, ofrecemos reembolsos completos para cancelaciones realizadas con suficiente antelación.
+                Sin embargo, te recomendamos revisar los detalles de la política de cancelación en la página de cada
+                propiedad o contactarnos directamente para obtener más información.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Item-6-->
+        <div class="accordion-item">
+          <h4 class="accordion-header" style="margin: 0;">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              ¿Se proporciona algún contrato de arrendamiento o acuerdo de alquiler?
+            </button>
+          </h4>
+          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                Dependiendo del propietario y las regulaciones locales, es posible que se requiera un contrato de
+                arrendamiento o acuerdo de alquiler.
+                Te recomendamos discutir este tema directamente con el propietario para obtener información sobre los
+                documentos legales relacionados con el alquiler de la propiedad.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Item-7-->
+        <div class="accordion-item">
+          <h4 class="accordion-header" style="margin: 0;">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              ¿Cuáles son los requisitos para alquilar una casa o departamento?
+            </button>
+          </h4>
+          <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                Para alquilar una propiedad, generalmente requerimos un formulario de solicitud completado, una
+                verificación de antecedentes y un depósito de seguridad.
+                Los requisitos exactos pueden variar según la propiedad y la ubicación.
+                Puedes encontrar más información sobre los requisitos específicos en la página de cada propiedad.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Item-8-->
+        <div class="accordion-item">
+          <h4 class="accordion-header" style="margin: 0;">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              ¿Puedo traer mascotas a la propiedad de alquiler?
+            </button>
+          </h4>
+          <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                Algunas propiedades permiten mascotas, mientras que otras tienen restricciones.
+                En la página de cada propiedad, encontrarás información sobre la política de mascotas.
+                Si tienes alguna pregunta adicional sobre la política de mascotas, no dudes en contactarnos.
+              </p>
             </div>
           </div>
         </div>
@@ -109,10 +217,14 @@
   <footer class="footer-ayuda">
     <!--Redes-->
     <ul class="redes">
-      <li><a href=""><img src="../contenido-pagina/instagram.png" alt="Instagram"></a></li>
-      <li><a href=""><img src="../contenido-pagina/twitter.png" alt="Twitter"></a></li>
-      <li><a href=""><img src="../contenido-pagina/facebook.png" alt="Facebook"></a></li>
-      <li><a href=""><img src="../contenido-pagina/linkedin.png" alt="Linkedin"></a></li>
+      <li><a href="https://www.instagram.com/"><img src="../contenido-pagina/instagram.png"
+            alt="Logo de Instagram - Enlace al perfil de la empresa"></a></li>
+      <li><a href="https://twitter.com/"><img src="../contenido-pagina/twitter.png"
+            alt="Logo de Twitter - Enlace al perfil de la empresa"></a></li>
+      <li><a href="https://facebook.com/"><img src="../contenido-pagina/facebook.png"
+            alt="Logo de Facebook - Enlace al perfil de la empresa"></a></li>
+      <li><a href="https://www.linkedin.com/"><img src="../contenido-pagina/linkedin.png"
+            alt="Logo de Linkedin - Enlace al perfil de la empresa"></a></li>
     </ul>
     <!--Copyright-->
     <p>&copy; 2023 Alquileres Marcelo.com</p>

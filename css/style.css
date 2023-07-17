@@ -1,79 +1,114 @@
 @charset "UTF-8";
-/*Fuentes*/
-html, body {
-  font-size: 15px;
-  font-family: "Courier New", Courier, monospace;
-  margin: 0;
-  max-width: 100%;
-  height: 100%;
+* {
+  box-sizing: border-box;
 }
 
-.contenedor-todo {
-  height: 100%;
-  width: 100%;
+html {
+  min-height: 100%;
+  position: relative;
+  font-size: 16px;
+}
+
+body {
+  max-width: 100%;
+  min-height: 100%;
+  height: auto;
+  padding: 0;
   margin: 0;
-  display: grid;
+  font-family: sans-serif;
+  background: linear-gradient(rgb(61, 172, 227), rgb(98, 141, 213), rgb(116, 109, 198), rgb(126, 74, 184), rgb(130, 21, 170));
 }
 
 h1 {
-  font-size: 4rem;
+  margin: 5px;
   text-align: center;
+  font-size: 5rem;
 }
 
 h2 {
-  font-size: 2.5rem;
+  margin: 5px;
   text-align: center;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  margin: 5px;
   text-align: center;
+  font-size: 2rem;
   margin: 0;
 }
 
 h4 {
-  font-size: 1.2rem;
+  margin: 5px;
   text-align: center;
+  font-size: 1.8rem;
   margin-top: 20px;
 }
 
 h5 {
-  font-size: 0.8rem;
+  margin: 5px;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 h6 {
-  font-size: 0.5rem;
+  margin: 5px;
   text-align: center;
+  font-size: 1.3rem;
 }
 
 p {
+  margin: 5px;
+  text-align: justify;
+  font-size: 1.2rem;
   margin: 0;
+}
+
+span {
+  font-size: 1.5rem;
+}
+
+div {
+  font-size: 1.2rem;
+}
+
+button {
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+section {
+  width: 100%;
 }
 
 ul {
   list-style: none;
 }
 
-/*Fuentes*/
 /*header*/
 header {
   width: 100%;
-  z-index: 9999;
-  background-color: rgba(10, 78, 142, 0.9);
+  z-index: 500;
+  background-color: rgb(10, 78, 142);
   display: flex;
   align-items: center;
   height: 10%;
   position: sticky;
   top: 0px;
   margin-bottom: 0;
+  /*Nav*/
 }
-
-/*Nav*/
-nav {
+header nav {
+  font-family: "Courier New", Courier, monospace;
   width: 85%;
 }
-nav ul {
+header nav ul {
   justify-content: left;
   display: flex;
   flex-wrap: nowrap;
@@ -82,37 +117,36 @@ nav ul {
   align-items: center;
   padding-left: 0;
   padding-bottom: 0;
-  gap: 2.5%;
+  gap: 20px;
   list-style: none;
 }
-nav ul a {
+header nav ul a {
   text-decoration: none;
   color: wheat;
-  font-size: 110%;
+  font-size: 1.85rem;
 }
-nav ul a:hover {
+header nav ul a:hover {
   color: #0ac1ab;
 }
-
-.logo {
-  width: 4rem;
+header nav ul .logo {
+  width: 5rem;
 }
-
-.modo-container {
+header .modo-container {
   width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.modo {
+header .modo-container .modo {
   margin: 0;
-  width: 55px;
-  height: 35px;
+  width: 6.5rem;
 }
 
 /*Footer*/
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   margin-top: 20px;
   padding: 1.3em;
   align-self: end;
@@ -120,57 +154,67 @@ footer {
   text-align: center;
   display: grid;
 }
-
-.redes {
+footer p {
+  text-align: center;
+  font-size: 2rem;
+}
+footer .redes {
   display: flex;
   gap: 10px;
   margin: auto;
   list-style: none;
 }
-.redes img {
-  width: 1.5rem;
+footer .redes img {
+  width: 3rem;
   filter: grayscale(1);
   transition: 0.7s;
 }
-.redes img:hover {
-  width: 1.5rem;
+footer .redes img:hover {
   filter: none;
 }
 
 /*Hero banner*/
 .background-hero {
   width: 100%;
-  min-height: 90%;
+  min-height: 100vh;
   margin: auto;
-  margin-bottom: 9rem;
-  display: grid;
-  align-items: center;
+  margin-bottom: 6rem;
   position: relative;
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../contenido-pagina/banner.jpg) no-repeat center center fixed;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #hero {
-  margin: auto;
+  margin: 0 auto;
   margin-top: 0;
   height: 90%;
   width: 100%;
   text-align: center;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   top: 10%;
   margin: auto;
 }
-
 .presentacion h1, .presentacion h2 {
   text-shadow: 6px 1px 0.1em rgb(188, 184, 196), -6px -1px 0.1em rgb(188, 184, 196);
 }
 
 .buscador {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,23 +225,32 @@ footer {
 }
 
 .texto {
-  width: 12rem;
+  width: 30rem;
+  height: 3rem;
+  border: solid 2px black;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .texto:hover {
-  width: 12rem;
+  width: 29.2rem;
+  height: 2.8rem;
   border: solid 2px #6b63ff;
 }
 
 .lupa {
-  width: 1rem;
+  width: 1.7rem;
 }
 
 .boton {
   display: flex;
   justify-content: center;
-  width: 1.3rem;
-  height: 1.3rem;
+  align-items: center;
+  width: 2.8rem;
+  height: 3rem;
+  border: solid 2px black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .boton:hover {
@@ -206,8 +259,9 @@ footer {
 }
 
 .pin-mapa {
-  width: 1rem;
+  width: 1.7rem;
   margin-left: 10px;
+  filter: invert(1);
 }
 
 .pin-mapa:hover {
@@ -223,12 +277,17 @@ footer {
 
 #propiedades {
   margin: auto;
-  width: 100%;
+  padding: 10px;
+  width: 98%;
   height: 100%;
+  border: black 2px solid;
+  border-radius: 10px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
-  column-gap: 10px;
+  align-items: center;
 }
 #propiedades .propiedad {
   width: 30%;
@@ -236,7 +295,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 350px;
 }
 #propiedades .propiedad a {
   width: 100%;
@@ -255,7 +313,6 @@ footer {
   justify-self: end;
 }
 
-/*Fuentes*/
 /*Propiedad*/
 .galeria {
   margin: 3%;
@@ -271,7 +328,6 @@ iframe {
   width: 75%;
 }
 
-/*Fuentes*/
 /*Cuenta*/
 #main-cuenta {
   height: 80%;
@@ -326,20 +382,46 @@ iframe {
   align-items: center;
 }
 
-.footer-ayuda {
-  margin-top: 500px;
+.contenedor-preguntas {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.contenedor-preguntas input {
+  font-size: 1.5rem;
+}
+.contenedor-preguntas .boton-preguntas {
+  font-size: 2rem;
 }
 
-.acordion-item {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.contenedor-h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-/*Fuentes*/
+.accordion-item {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+
 /*Configuración*/
+#nav-seccion {
+  width: 90%;
+}
+#nav-seccion a {
+  width: 1fr;
+  padding: 10px 0 10px 0;
+}
+#nav-seccion a .btn {
+  width: 1fr;
+  padding: 0;
+}
+
 #personalizacion {
-  background-color: rgb(16, 111, 114);
   width: 100%;
   height: 500px;
+  border: 10px solid black;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "a y c" "b b b" "b b b";
@@ -371,16 +453,23 @@ iframe {
 .p-premium {
   grid-area: b;
   align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.p-premium button {
-  width: 300px;
+.p-premium a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-premium a button {
+  width: 300%;
   height: 100px;
   border-radius: 50px;
   border: 2px solid black;
 }
-
-.p-premium button:hover {
+.p-premium a button:hover {
   background-color: black;
   color: white;
   border: 2px solid white;
@@ -388,7 +477,7 @@ iframe {
 
 /*seguridad*/
 #seguridad {
-  background-color: rgb(62, 101, 120);
+  border: 10px solid black;
   height: 100%;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -414,24 +503,37 @@ label input {
 
 /*Premium*/
 #premium {
-  background-color: rgba(55, 61, 115, 0.859);
+  border: 10px solid black;
   height: 100%;
   justify-content: space-evenly;
 }
-
-@media only screen and (max-width: 1000px) {
-  .propiedad {
-    width: 45%;
-  }
+#premium .col {
+  width: 33%;
 }
-@media only screen and (max-width: 800px) {
-  .propiedad {
-    width: 100%;
+#premium .col .card-body {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  header nav ul {
+    gap: 6.3px;
+  }
+  html {
+    font-size: 10px;
+  }
+  #propiedades {
+    gap: 2px;
+  }
+  #propiedades .propiedad {
+    width: 49.5%;
   }
 }
 @media only screen and (max-width: 400px) {
-  nav ul a {
-    font-size: 85%;
+  html {
+    font-size: 7px;
+  }
+  #propiedades .propiedad {
+    width: 100%;
   }
 }
 @media only screen and (min-height: 900px) {

@@ -1,0 +1,73 @@
+@use "variables";
+@use "mixins";
+*{
+    box-sizing: border-box;
+}
+html{
+    min-height: 100%;
+    position: relative;
+    font-size: 16px;
+}
+body{
+    max-width: 100%;
+    min-height: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(rgb(61, 172, 227), rgb(98, 141, 213), rgb(116, 109, 198), rgb(126, 74, 184), rgb(130, 21, 170));
+}
+h1{
+    @include mixins.fuente(center);
+    font-size: 5rem;
+}
+h2{
+    @include mixins.fuente(center);
+    font-size: 2.5rem;
+}
+h3{
+    @include mixins.fuente(center);
+    font-size: 2rem;
+    margin: 0;
+}
+h4{
+    @include mixins.fuente(center);
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+h5{
+    @include mixins.fuente(center);
+    font-size: 1.5rem;
+
+}
+h6{
+    @include mixins.fuente(center);
+    font-size: 1.3rem;
+
+}
+p{
+    @include mixins.fuente(justify);
+    font-size: 1.2rem;
+    margin: 0;
+}
+span{
+    font-size: 1.5rem;
+}
+div{
+    font-size: 1.2rem;
+}
+button{
+    font-size: 1rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+section{
+    width: 100%;
+}
+ul{
+    list-style: none;
+}

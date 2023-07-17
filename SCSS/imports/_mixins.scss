@@ -1,0 +1,4 @@
+@mixin fuente($align){
+    margin: 5px;
+    text-align: $align;
+}

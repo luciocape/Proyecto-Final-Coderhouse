@@ -1,0 +1,92 @@
+@use "variables";
+@use "mixins";
+
+/*header*/
+header {
+    width: 100%;
+    z-index: 500;
+    background-color: rgb(10, 78, 142);
+    display: flex;
+    align-items: center;
+    height: 10%;
+    position: sticky;
+    top: 0px;
+    margin-bottom: 0;
+
+    /*Nav*/
+    nav {
+        font-family: 'Courier New', Courier, monospace;
+        width: 85%;
+
+        ul {
+            justify-content: left;
+            display: flex;
+            flex-wrap: nowrap;
+            margin: auto;
+            margin-left: 0.7rem;
+            align-items: center;
+            padding-left: 0;
+            padding-bottom: 0;
+            gap: 20px;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: wheat;
+                font-size: 1.85rem;
+            }
+
+            a:hover {
+                color: #0ac1ab;
+            }
+
+            .logo {
+                width: 5rem;
+            }
+        }
+    }
+    .modo-container {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .modo {
+            margin: 0;
+            width: 6.5rem;
+        }
+    }
+}
+/*Footer*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    padding: 1.3em;
+    align-self: end;
+    background-color: rgb(7, 73, 99);
+    text-align: center;
+    display: grid;
+
+    p {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .redes {
+        display: flex;
+        gap: 10px;
+        margin: auto;
+        list-style: none;
+
+        img {
+            width: 3rem;
+            filter: grayscale(1);
+            transition: 0.7s;
+        }
+
+        img:hover {
+            filter: none;
+        }
+    }
+}
